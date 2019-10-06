@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Rugby Score Keeper</string>
-    <string name="try_scored">Try</string>
-    <string name="penalty">Penalty</string>
-    <string name="conversion">Conversion</string>
+    <string name="try_scored">Try +5</string>
+    <string name="penalty">Penalty +3</string>
+    <string name="conversion">Conversion +2</string>
     <string name="reset">Reset</string>
     <string name="team_a">Team A</string>
     <string name="team_b">Team B</string>

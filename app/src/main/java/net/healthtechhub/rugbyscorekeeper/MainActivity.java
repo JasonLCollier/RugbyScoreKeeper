@@ -14,28 +14,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
+
     /**
      * Adds five points to Team A's score.
      */
-    public void addTryA(View view){
+    public void addTryA(View view) {
         scoreTeamA = scoreTeamA + 5;
         displayForTeamA(scoreTeamA);
     }
+
     /**
      * Adds three points to Team A's score.
      */
-    public void addPenaltyA(View view){
+    public void addPenaltyA(View view) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
+
     /**
      * Adds two points to Team A's score.
      */
-    public void addConversionA(View view){
+    public void addConversionA(View view) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
+
     /**
      * Displays the given score for Team A.
      */
@@ -47,24 +53,27 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds five points to Team B's score.
      */
-    public void addTryB(View view){
+    public void addTryB(View view) {
         scoreTeamB = scoreTeamB + 5;
         displayForTeamB(scoreTeamB);
     }
+
     /**
      * Adds three points to Team B's score.
      */
-    public void addPenaltyB(View view){
+    public void addPenaltyB(View view) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
+
     /**
      * Adds two points to Team B's score.
      */
-    public void addConversionB(View view){
+    public void addConversionB(View view) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
+
     /**
      * Displays the given score for Team A.
      */
@@ -72,12 +81,13 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
      * Resets both scores.
      */
-    public void reset(View view){
-        scoreTeamA=0;
-        scoreTeamB=0;
+    public void reset(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
